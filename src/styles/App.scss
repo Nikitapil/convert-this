@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import './nullstyle.scss';
+
+body {
+    background: url('../assets/background.svg');
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: #e2f7fc;
+}
+.container {
+    max-width: 1240px;
+    padding: 10px 20px;
+    margin: 0 auto;
+}

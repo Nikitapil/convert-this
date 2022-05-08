@@ -1,0 +1,13 @@
+.custom-select {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    select {
+        padding: 2px 5px;
+        transition: 0.4s;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        align-self: stretch;
+    }
+}

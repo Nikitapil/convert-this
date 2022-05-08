@@ -1,0 +1,15 @@
+.text-input {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    input {
+        padding: 2px 5px;
+        transition: 0.4s;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+            box-shadow: inset 0px 0px 10px 1px #424ffb;
+        }
+    }
+}

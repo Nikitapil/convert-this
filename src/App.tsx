@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.scss';
+import {Routes, Route} from 'react-router-dom'
+import { CurrencyExchange } from './pages/CurrencyExchange';
+import { CurrencyConverter } from './pages/CurrencyConverter';
+import { ExchangeRates } from './pages/ExchangeRates';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-testid='app'>
+      <Routes>
+        <Route path='/' element={<CurrencyExchange/>}>
+          <Route path='converter' element={<CurrencyConverter/>} />
+          <Route path='rates' element={<ExchangeRates/>} />
+        </Route>
+      </Routes>
     </div>
   );
 }

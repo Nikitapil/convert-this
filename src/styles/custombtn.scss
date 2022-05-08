@@ -1,0 +1,12 @@
+.custom-btn {
+    border: 2px solid #e2f7fc;
+    background: transparent;
+    color: #ffa500;
+    padding: 0px 5px;
+    border-radius: 8px;
+    transition: 0.4s;
+    letter-spacing: 0.5px;
+    &:hover {
+        background:#e2f7fc59
+    }
+}
